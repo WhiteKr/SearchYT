@@ -5,7 +5,7 @@ const request = require('request');
 class youtubeAPI {
 
 	// Search only Channels on YouTube
-	SearchYoutubeChannel (keyword, count, APIKEY) {
+	SearchYoutubeChannel(keyword, count, APIKEY) {
 		return new Promise((resolve, reject) => {
 			var searchOPT = {
 				qs: {
@@ -17,14 +17,14 @@ class youtubeAPI {
 				},
 				uri: "https://www.googleapis.com/youtube/v3/search"
 			}
-	
+
 			request.get(searchOPT, (err, res, body) => {
-				if (err) return resolve({error: err});
+				if (err) return resolve({ error: err });
 
 				// console.log("========== Channels ==========");
 				// console.log(body);
 				// console.log("==============================");
-	
+
 				let data = JSON.parse(body);
 				return resolve(data);
 			});
@@ -32,7 +32,7 @@ class youtubeAPI {
 	}
 
 	// Search only Videos on YouTube
-	SearchYoutubeVedio (keyword, count, APIKEY) {
+	SearchYoutubeVedio(keyword, count, APIKEY) {
 		return new Promise((resolve, reject) => {
 			var searchOPT = {
 				qs: {
@@ -46,7 +46,7 @@ class youtubeAPI {
 			}
 
 			request.get(searchOPT, (err, res, body) => {
-				if (err) return resolve({error: err});
+				if (err) return resolve({ error: err });
 
 				// console.log("========== Videos ==========");
 				// console.log(body);
@@ -59,7 +59,7 @@ class youtubeAPI {
 	}
 
 	// Search All results on YouTube
-	SearchYoutubeAll (keyword, count, APIKEY) {
+	SearchYoutubeAll(keyword, count, APIKEY) {
 		return new Promise((resolve, reject) => {
 			var searchOPT = {
 				qs: {
@@ -73,7 +73,7 @@ class youtubeAPI {
 			}
 
 			request.get(searchOPT, (err, res, body) => {
-				if (err) return resolve({error: err});
+				if (err) return resolve({ error: err });
 
 				// console.log("========== Channel & Video ==========");
 				// console.log(body);
