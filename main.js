@@ -5,7 +5,7 @@ const request = require('request');
 class youtubeAPI {
 
 	// Search only Channels on YouTube
-	SearchYoutubeChannel (keyword, APIKEY) {
+	SearchYoutubeChannel (keyword, count, APIKEY) {
 		return new Promise((resolve, reject) => {
 			var searchOPT = {
 				qs: {
@@ -13,7 +13,7 @@ class youtubeAPI {
 					part: "snippet",
 					key: APIKEY,
 					type: "channel",
-					maxResult: 5
+					maxResults: count
 				},
 				uri: "https://www.googleapis.com/youtube/v3/search"
 			}
@@ -32,7 +32,7 @@ class youtubeAPI {
 	}
 
 	// Search only Videos on YouTube
-	SearchYoutubeVedio (keyword, APIKEY) {
+	SearchYoutubeVedio (keyword, count, APIKEY) {
 		return new Promise((resolve, reject) => {
 			var searchOPT = {
 				qs: {
@@ -40,7 +40,7 @@ class youtubeAPI {
 					part: "snippet",
 					key: APIKEY,
 					type: "video",
-					maxResults: 5
+					maxResults: count
 				},
 				uri: "https://www.googleapis.com/youtube/v3/search"
 			}
@@ -59,7 +59,7 @@ class youtubeAPI {
 	}
 
 	// Search All results on YouTube
-	SearchYoutubeAll (keyword, APIKEY) {
+	SearchYoutubeAll (keyword, count, APIKEY) {
 		return new Promise((resolve, reject) => {
 			var searchOPT = {
 				qs: {
@@ -67,7 +67,7 @@ class youtubeAPI {
 					part: "snippet",
 					key: APIKEY,
 					type: "channel video",
-					maxResults: 5
+					maxResults: count
 				},
 				uri: "https://www.googleapis.com/youtube/v3/search"
 			}

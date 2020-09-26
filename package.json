@@ -1,22 +1,35 @@
 {
-  "name": "searchyt",
-  "version": "1.0.0",
-  "description": "YouTube Search API",
-  "main": "main.js",
-  "dependencies": {
-    "request": "^2.88.2",
-    "require": "^2.4.20"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "YouTube",
-    "Search",
-    "유튜브",
-    "검색"
-  ],
-  "author": "White Choco",
-  "license": "ISC"
+	"name": "searchyt",
+	"version": "2.0.0",
+	"description": "YouTube Search API",
+	"main": "main.js",
+	"dependencies": {
+		"request": "^2.88.2",
+		"require": "^2.4.20"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"YouTube",
+		"Search",
+		"Channel",
+		"Video",
+		"유튜브",
+		"검색",
+		"채널",
+		"비디오",
+		"영상"
+	],
+	"author": {
+		"name": "White Choco",
+		"url": "https://github.com/WhiteKr"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/WhiteKr/SearchYT"
+	},
+	"homepage": "https://github.com/WhiteKr/SearchYT",
+	"license": "ISC"
 }
