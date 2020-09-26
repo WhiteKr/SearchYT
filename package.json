@@ -1,0 +1,22 @@
+{
+  "name": "searchyt",
+  "version": "1.0.0",
+  "description": "YouTube Search API",
+  "main": "main.js",
+  "dependencies": {
+    "request": "^2.88.2",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "YouTube",
+    "Search",
+    "유튜브",
+    "검색"
+  ],
+  "author": "White Choco",
+  "license": "ISC"
+}
